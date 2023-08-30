@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+	
+	int num;
+	
+	printf("Informe o numero: ");
+	scanf("%d", &num);
+	
+	if (num % 2 == 0 && num % 7 == 0){
+	    printf("o numero e divisivel por 2 e por 7", num);
+	}
+	else if (num % 2 == 0){
+		printf("o numero %d é divisivel por 2", num);
+	}
+    else if (num % 7 == 0){
+		printf("o numero %d é divisivel por 7", num);
+	}
+	else{
+	    printf("O numero nao e divisivel por nenhum dos dois");
+	}
+	    
+	return 0;
+}
