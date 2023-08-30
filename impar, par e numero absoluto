@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	
+	int num;
+	
+	printf("Informe o numero: ");
+	scanf("%d", &num);
+	
+	if (num < 0){
+        printf("O numero absoluto e: %d",num *-1);
+    }
+	
+	else if (num % 2 == 0){
+	    printf("o numero e par",num);
+	}
+	else if (num % 2 == 1){
+		printf("o numero e impar",num);
+	}
+    
+	return 0;
+}
