@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+	
+	
+	float quantidade, valor;
+	
+	
+	printf("Informe a quantidade de folhas: ");
+	scanf("%f", &quantidade);
+	
+	if (quantidade <= 100){
+		valor = quantidade * 0.25;
+		printf("A quantidade de folhas é: %.f \n", quantidade);
+		printf("O valor é: %.2f", valor);
+	}
+	
+	if else (quantidade > 100){
+	    quantidade = quantidade - 100;
+	    valor = quantidade * 0.20;
+	    printf("A quantidade de folhas é: %.f \n", quantidade);
+		printf("O valor é: %.2f", valor);
+	    
+	}
+	
+	
+	
+	
+	 
+	return 0;
+} 
