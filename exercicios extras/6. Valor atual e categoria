@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+
+
+setlocale(LC_ALL, "Portuguese");
+
+float valor_atual;
+
+char categoria;
+
+
+printf("Informe valor atual: ");
+
+scanf("%f", &valor_atual);
+
+
+printf("Informe categoria: ");
+
+scanf(" %c", &categoria);
+
+
+switch(categoria){
+
+case 'A': printf("Novo valor: %.2f", valor_atual * 1.2); break;
+
+case 'B': printf("Novo valor: %.2f", valor_atual * 1.15); break;
+
+case 'C': printf("Novo valor: %.2f", valor_atual * 1.11); break;
+case 'D': printf("Novo valor: %.2f", valor_atual * 1.08); break;
+
+case 'E': printf("Novo valor: %.2f", valor_atual * 1.05); break;
+
+default: printf("Categoria inválida!");
+
+}
+
+return 0;
+}
+
