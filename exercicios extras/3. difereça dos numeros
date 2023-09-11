@@ -1,0 +1,26 @@
+/*Elabore um programa que leia dois valores inteiros distintos e apresente o resultado da diferença domaior valor pelo menor valor*/
+
+#include <stdio.h>
+
+int main() {
+	
+	int soma, num1, num2;
+	
+	printf("Informe o pirmeiro numero: ");
+	scanf("%d", &num1);
+	
+	printf("Informe o segundo numero: ");
+	scanf("%d", &num2);
+	
+	if (num1 > num2){
+		soma = num1 - num2;
+		printf("O resultado da diferenca desses dois numeros e de: %d", soma);
+	}
+	
+	else if (num1 < num2){
+		soma = num2 - num1;
+		printf("O resultado da diferenca desses dois numeros e de: %d", soma);
+	}
+	
+	return 0;
+}
