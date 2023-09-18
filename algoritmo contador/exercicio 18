@@ -1,0 +1,32 @@
+/*18 - Escreva um algoritmo que apresente o seguinte menu:Se as opções 1, 2, 3 ou 4 forem escolhidas, mostrar na tela o nome da opção (Inserir, Excluir, Consultar,Listar). Se a opção 5 for escolhida, encerrar a execução do algoritmo*/
+
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    int op;
+    
+    do{
+        printf("\n# MENU PRINCIPAL #\n");
+        printf("1 - Inserir");
+        printf("\n2 - Excluir");
+        printf("\n3 - Consultar");
+        printf("\n4 - Listar");
+        printf("\n5 - Sair\n");
+        scanf("%d", &op);
+        
+        switch (op){
+            case 1: printf("Voce escolheu inserir.");break;
+            case 2: printf("Voce escolheu excluir.");break;
+            case 3: printf("Voce escolheu consultar.");break;
+            case 4: printf("Voce escolheu listar.");break;
+            case 5: printf("Saindo...");break;
+            default: printf("Opção inválida.");
+        }
+        
+        
+    }while(op != 5);
+    
+    return 0;
+}
