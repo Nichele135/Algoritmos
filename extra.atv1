@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "Portuguese");
+	
+	int op, num, quantidade, esfera, limpeza, troca, quebrado;
+	
+	/*printf("Informe a quantidade de mouses: ");
+	scanf("%d", quantidade);*/
+	
+	esfera
+	
+	do{
+		/*printf("Quantidade de mouses: %d", quantidade);*/
+        printf("\n1 - Necessita da esfera. %d", esfera);
+        printf("\n2 - Necessita de limpeza. %d", limpeza);
+        printf("\n3 - Necessita troca de cabo ou conector. %d", troca);
+        printf("\n4 - Quebrado ou inutilizado. %d", quebrado);
+        printf("\n0 - Sair\n");
+        scanf("%d", &op);
+        
+        switch (op){
+        	case 1: printf("Foi adicionado", esfera = esfera +1);break;
+        	case 2: printf("Foi adicionado", limpeza = limpeza +1);break;
+        	case 3:printf("Foi adicionado", troca = troca +1);break;
+        	case 4:printf("Foi adicionado", quebrado = quebrado +1);break;
+        	case 0: printf ("Saindo...");
+        	default: printf("Opção invalidada");
+		}
+        
+		
+		
+	}while(op != 0);
+	
+	
+
+
+	return 0;	
+}
