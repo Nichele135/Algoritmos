@@ -5,8 +5,8 @@ int main(){
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	int op;
-	float esfera, limpeza, troca, total, quebrado;
+	int op, esfera, limpeza, troca, quebrado;
+	float total;
 	
 	esfera=0;
 	limpeza=0;
@@ -29,21 +29,17 @@ int main(){
         	case 0: printf ("Saindo...");
 		}
         
-		
+
 		
 	}while(op != 0);
 		total = esfera + limpeza + troca + quebrado;
 		 
 		printf("\nQuantidade de mouses: %.f", total);
-        printf("\n1 - Necessita da esfera. %2.f (%2.f%%)", esfera, esfera/total * 100);
-        printf("\n2 - Necessita de limpeza. %2.f (%2.f%%)", limpeza, limpeza/total * 100);
-        printf("\n3 - Necessita troca de cabo ou conector. %2.f (%2.f%%)", troca, troca/total * 100);
-        printf("\n4 - Quebrado ou inutilizado. %2.f (%2.f%%)", quebrado, quebrado/total * 100);
-        
+        printf("\n1 - Necessita da esfera. %d (%.2f%%)", esfera, esfera/total * 100);
+        printf("\n2 - Necessita de limpeza. %d (%.2f%%)", limpeza, limpeza/total * 100);
+        printf("\n3 - Necessita troca de cabo ou conector. %d (%.2f%%)", troca, troca/total * 100);
+        printf("\n4 - Quebrado ou inutilizado. %d (%.2f%%)", quebrado, quebrado/total * 100);
         scanf("%d", &op);
-	
-	
-
 
 	return 0;	
 }
