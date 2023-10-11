@@ -1,0 +1,24 @@
+/*Tentando descobrir se um dado era viciado, um dono de cassino honesto (risos) o lançou 15 vezes.
+Escreva um algoritmo que dados os resultados dos lançamentos, armazene em um vetor o número deocorrências de cada face. 
+Apresente o resultado na tela*/
+
+#include <stdio.h>
+
+int main(){
+	
+	int vetor[6] = {0, 0, 0, 0, 0, 0}, i, face;
+	
+	for(i = 1; i <= 15; i++){
+		printf("Informe o lancamento [%d]: ", i);
+		scanf("%d", &face);
+		
+		vetor[face - 1]++;
+		
+	}
+	
+	for(i = 0; i <= 5; i++){
+		printf("Face %d: %d\n", i + 1, vetor[i]);
+	}
+	
+	return 0;
+}
