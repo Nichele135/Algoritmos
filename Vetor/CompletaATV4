@@ -16,7 +16,7 @@ int main(){
 	
 	
 	for(i = 0; i < 5; i++){
-		printf("\nNumeros informados: %d", B[i]);
+		printf("\nO dobro do numero informado: %d", B[i]);
 	}
 	
 	return 0;
