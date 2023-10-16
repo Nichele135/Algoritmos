@@ -1,0 +1,50 @@
+/*Escreva um programa que leia uma matriz M de 5 x 5 elementos e, utilizando estruturas de repetição,apresente na tela o menor valor da matriz, 
+o maior valor da matriz, a soma dos valores da matriz e amédia dos valores da matriz.*/
+
+#include <stdio.h>
+
+int main(){
+	
+	int matriz [5][5] = {{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, 
+	{11, 12, 13, 14, 15}, {16, 17,18, 19, 20}, {21, 22, 23, 24, 25}}, i, j, menor, maior, media, soma;
+	
+	
+	menor = matriz[0][0];
+	maior = matriz[0][0];
+	soma = 0;
+	
+	for (i = 0; i < 5; i++){
+		for (j = 0; j < 5; j++){
+		/*printf("Informe Numero [%d][%d]: ", i, j);
+		scanf("%d", &matriz[i][j]);*/
+		}	
+	}
+	
+	
+	
+	for (i = 0; i < 5; i++){
+		for (j = 0; j < 5; j++){
+			
+			if (matriz [i][j] < menor){
+				menor = matriz[i][j];
+			}
+			
+			if (matriz[i][j] > maior){
+				maior = matriz[i][j];
+			}
+			soma = soma + matriz[i][j];
+		}
+		
+	}
+	
+	media = soma / 25.0;
+	
+	printf("Resultado matriz: \n");
+	
+	printf("\nMenor%d", menor);
+	printf("\nMaior%d", maior);
+	printf("\nSoma%d", soma);
+	printf("\nA media e de: %d", media);
+	
+	return 0;
+}
