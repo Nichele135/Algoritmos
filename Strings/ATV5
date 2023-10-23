@@ -5,9 +5,9 @@
 
 	int main(){
 
-	char str[30] = "Universidade Positivo";
+	char str[30] = "Andre";
 	
-	if(strcmp(str, "Universidade Positivo") == 0){
+	if(strcmp(str, "Andre") == 0){
 	printf("As strings são iguais.");
 	}
 	else{printf("As strings são diferentes.");
