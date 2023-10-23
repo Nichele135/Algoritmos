@@ -1,0 +1,44 @@
+/*Um hospital local está fazendo uma campanha para receber doação de sangue. O propenso doadordeve inicialmente se cadastrar 
+informando o seu nome, sua idade, seu peso, responder a um brevequestionário e apresentar um documento oficial com foto. 
+Faça um programa que permita ao hospitalavaliar a aptidão de um voluntário quanto à doação de sangue. Para estar apto a doar sangue, 
+ovoluntário deve ter idade entre 16 e 69 anos, pesar pelo menos 50 kg, estar bem alimentado e nãoestar resfriado. 
+O programa deve ler os dados e imprimir no final o nome do voluntário e se ele estáapto ou não a doar sangue.*/
+
+#include <stdio.h>
+#include <string.h>
+
+	int main(){
+	
+	int idade, peso;
+	char alimentado, resfri, str[31];
+	
+	
+	printf("\nRESPONDA A UM BREVE QUETIONARIO!!!");
+	
+	printf("\nAPRESENTE UM DOCUMENTO COM FOTO!");
+	
+	printf("\nInforme seu nome: ");
+	scanf("%s", str);
+	
+	printf("\nInforme seu idade: ");
+	scanf("%d", &idade);
+	
+	printf("\nInforme seu peso: ");
+	scanf("%d", &peso);
+	
+	printf("\nVoce esta bem alimentado? s/n ");
+	scanf(" %c", &alimentado);
+	
+	printf("\npegou resfriado esses ultimos dias? s/n ");
+	scanf(" %c", &resfri);
+	
+	if(idade >= 16 && idade <= 69 && peso >= 50 && alimentado == 's' && resfri == 'n'){
+		printf("O(a) (%s) esta apto para doar sangue", str);
+	}
+	
+	else{
+		printf("O(a) (%s) NAO esta apto a doar sangue", str);
+	}
+	
+	return 0;
+	}
