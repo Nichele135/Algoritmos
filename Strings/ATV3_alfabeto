@@ -1,0 +1,15 @@
+/*Escreva um programa para exibir os caracteres de A a Z*/
+
+#include <stdio.h>
+#include <string.h>
+
+int main (){
+	
+	char i;
+	
+	for(i = 65; i <= 90; i++){
+		printf("%c ", i);
+	}
+	
+	return 0;
+}
