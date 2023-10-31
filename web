@@ -1,0 +1,18 @@
+        function clicar(){
+            imagem.src = "IMG/lampada_quebrada.jpeg";
+            acendimentos = 0;
+            status = 1;
+            document.getElementById('resultado').innerText = `Total de de acendimentos: ${acendimentos}`;
+        }
+        
+
+        function acender(){
+            imagem.src = "IMG/lampada_ligada.jpeg";
+                acendimentos++;
+                status = 0;
+                document.getElementById('resultado').innerText = `Total de de acendimentos: ${acendimentos}`;
+        }
+
+        function apagar(){
+            if(status == 0){
+            imagem.src = "IMG/lampada_desligada.jpeg";}
