@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+struct Carro{
+char nome[31];
+float km_media, preco, km_mil;
+};
+
+int main(){
+		
+	int i;
+	    
+	struct Carro carro[6] = {
+	    {"Prisma", 13.3},
+	    {"Onix", 14.1},
+	    {"carro3", 10.2},
+	    {"carro4", 9.5},
+	    {"carro5", 8.9},
+	    {"carro6", 11.8},
+	};
+	
+	printf("Nome");
+	printf("KM media");
+	printf("Consumo de 1000KM");
+	printf("Preco");
+	
+	for(i = 0, i < 6, i++){
+		printf("%s %f %f %f", carro[i].nome, carro[i].km_media, carro[i].km_mil);
+	}
+	
+
+	
+
+return 0;
+}
