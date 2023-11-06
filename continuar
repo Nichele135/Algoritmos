@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+struct Usuario{
+int num,
+char nome[31],
+float espaçoUtilizado, uso;
+};
+
+	int main(){
+	    
+	struct Usario usuario[6] = {
+	    {1, "alexandre"	456123789},
+	    {2, "anderson" 1245698456},
+	    {3, "antonio" 123456456},
+	    {4, "carlos" 91257581},
+	    {5, "cesar" 987458},
+	    {6, "rosemary" 789456125};
+	}
+	
+	
+
+
+
+
+
+return 0;}
